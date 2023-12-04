@@ -107,11 +107,32 @@ In `{protocol}_mod_{i}.txt` (for i in [1:10]), you will find the actual buggy TL
 <!-- USAGE -->
 ## Usage
 
-[Directory Structure](#directory-structure) explains how to find the main.py file for each protocol. This section explains how to use main.py. Note that additional usage information can be found at the top of the main.py file itself.
+[Directory Structure](#directory-structure) explains how to find the `main.py` file for each protocol. This section explains how to use `main.py`. Note that additional usage information can be found at the top of the `main.py` file itself.
 
 ```console
 python3 main.py {model}
 ```
 where model is one of gpt3.5, gpt4, llama2, palm, or bard.
 
-text
+You must install some packages.
+```console
+pip install openai
+pip install replicate
+pip install google-generativeai
+```
+
+You must obtain an API key for the model you run.
+<ol>
+  <li><b>GPT</b>: [https://openai.com/blog/openai-api](https://openai.com/blog/openai-api)</li>
+  <li><b>Llama-2</b>: [https://replicate.com/blog/run-llama-2-with-an-api](https://replicate.com/blog/run-llama-2-with-an-api)</li>
+  <li><b>PaLM</b>: [https://developers.generativeai.google/tutorials/setup](https://developers.generativeai.google/tutorials/setup)</li>
+</ol>
+
+For GPT and PaLM, simply paste in the API key in line 41/42.
+
+For Llama-2, you must set the environment variable on your terminal by running:
+```console
+export REPLICATE_API_TOKEN={api_key}
+```
+
+By default, `main.py` runs your model of choice once on each of the 10 mutations with a static prompt. You may customize the control flow and the prompt as you wish by modifying the script.
