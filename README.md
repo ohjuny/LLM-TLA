@@ -55,12 +55,18 @@ TLA+ is a formal specification language used in system engineering to design and
 <!-- Directory Structure -->
 ## Directory Structure
 
-<ol>
-  <ol>
+Note: all correct TLA+ specs used in this project are sourced from [https://github.com/tlaplus/Examples](https://github.com/tlaplus/Examples).
+
+<ul>
+  <li>mutation-identification-benchmark</li>
+  <ul>
     <li>text</li>
-  </ol>
-  <li>text</li>
-</ol>
+  </ul>
+  <li>protocol-identification-benchmark</li>
+  <ul>
+    <li>...list of protocols with correct TLA+ specs...</li>
+  </ul>
+</ul>
 
 
 <!-- GETTING STARTED -->
