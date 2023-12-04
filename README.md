@@ -109,4 +109,9 @@ In {protocol}_mod_{i}.txt (for i in [1:10]), you will find the actual buggy TLA+
 
 [Directory Structure](#directory-structure) explains how to find the main.py file for each protocol. This section explains how to use main.py. Note that additional usage information can be found at the top of the main.py file itself.
 
+'''
+python3 main.py {model}
+'''
+where model is one of gpt3.5, gpt4, llama2, palm, or bard.
+
 text
