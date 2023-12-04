@@ -55,7 +55,12 @@ TLA+ is a formal specification language used in system engineering to design and
 <!-- Directory Structure -->
 ## Directory Structure
 
-text
+<ol>
+  <ol>
+    <li>text</li>
+  </ol>
+  <li>text</li>
+</ol>
 
 
 <!-- GETTING STARTED -->
