@@ -1,0 +1,39 @@
+--------------- mod1 ---------------
+Lines modified: 96, 97 (edit)
+Transactions that have a resource that wants to abort will still be committed
+
+--------------- mod2 ---------------
+Lines modified: 87 (edit)
+Changes canCommit from for all to there exists
+
+--------------- mod3 ---------------
+Lines modified: 70 (edit)
+Send abort message instead of commit message when trying to commit
+
+--------------- mod4 ---------------
+Lines modified: 76 (remove)
+Messages are not being sent when aborting in TMAbort
+
+--------------- mod5 ---------------
+Lines modified: 101 (removed)
+Removed TMCommit and TMAbort -- I think this will make commits and aborts not actually be represented in the transaction manager
+
+--------------- mod6 ---------------
+Lines modified: 27 (edit)
+System state is consistent if resource manager state is both committed and aborted (removed the ~)
+
+--------------- mod7 ---------------
+Lines modified: 30, 108, 112 (edit)
+Removed all theorems checking if system is in valid states
+
+--------------- mod8 ---------------
+Lines modified: 69, 75 (edit)
+Transaction manager aborts when supposed to be commited and commits when supposed to be aborted
+
+--------------- mod9 ---------------
+Lines modified: 100, 101, 102, 103, 104 (edit)
+Transition statement removed
+
+--------------- mod10 ---------------
+Lines modified: 96, 97 (edit)
+Broke decide function to never decide

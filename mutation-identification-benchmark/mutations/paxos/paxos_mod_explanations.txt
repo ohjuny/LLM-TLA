@@ -1,0 +1,42 @@
+Formatted, commented, correct TLA+: https://lamport.azurewebsites.net/video/consensus-on-transaction-commit.pdf
+
+--------------- mod1 ---------------
+Lines modified: 115 (remove)
+Removed check for current ballot is equal to new ballot in phase 1b
+
+--------------- mod2 ---------------
+Lines modified: 77 (edit)
+RM state will be commit even if it should be abort
+
+--------------- mod3 ---------------
+Lines modified: 137 (edit)
+Removed RMprepare in next state action statement (PCNext)
+Paxos should never reach prepare stage
+
+--------------- mod4 ---------------
+Lines modified: 9 (edit)
+Maximum statement does not correctly return maximum
+
+--------------- mod5 ---------------
+Lines modified: 56 (edit)
+No messages are sent - send(m) always return true
+
+--------------- mod6 ---------------
+Lines modified: 24, 26, 29, 31 (edit)
+Phase 1 and 2 flipped (attempt to commit before preparing)
+
+--------------- mod7 ---------------
+Lines modified: 117, 118, 119, 120, 121, 122 (removed)
+Acceptors never reply to proposer in prepare phase.
+
+--------------- mod8 ---------------
+Lines modified: 103, 105, 119 (edit)
+Acceptors scramble ballot number in prepare phase and Proposer does not check ballot number in commit phase.
+
+--------------- mod9 ---------------
+Lines modified: 4, 5, 8, 9, 10, 93, 94, 96 (edit)
+Use minimum ballot number instead of maximum.
+
+--------------- mod10 ---------------
+Lines modified: 88, 103 (edit)
+Proposer does not wait for a majority of acceptors.

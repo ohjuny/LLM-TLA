@@ -1,0 +1,41 @@
+Formatted, commented, correct TLA+: https://lamport.azurewebsites.net/video/consensus-on-transaction-commit.pdf
+
+--------------- mod1 ---------------
+Lines modified: 169
+Requires the candidate to already be a leader to become a leader.
+
+--------------- mod2 ---------------
+Lines modified: 171 (edit)
+Become a Candidate instead of a leader.
+
+--------------- mod3 ---------------
+Lines modified: 170
+Become a leader when not reaching 1/2 votes.
+
+--------------- mod4 ---------------
+Lines modified: 134
+Voting as a follower instead of candidate.
+
+--------------- mod5 ---------------
+Lines modified: 240
+Do nothing when vote is granted.
+
+--------------- mod6 ---------------
+Lines modified: 134, 135, 136, 137, 138, 139, 140, 141 (removed)
+Do nothing when request votes.
+
+--------------- mod7 ---------------
+Lines modified: 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 (removed)
+Do nothing for HandleRequestVoteResponse.
+
+--------------- mod8 ---------------
+Lines modified: 338-363
+Exchange Receive and DropMessage
+
+--------------- mod9 ---------------
+Lines modified: 218-223 (removed)
+Never grant vote
+
+--------------- mod10 ---------------
+Lines modified: 169, 170 (edit)
+Everyone can become a leader without any condition.
