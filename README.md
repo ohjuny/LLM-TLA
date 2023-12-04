@@ -57,10 +57,22 @@ TLA+ is a formal specification language used in system engineering to design and
 
 Note: all correct TLA+ specs used in this project are sourced from [https://github.com/tlaplus/Examples](https://github.com/tlaplus/Examples).
 
+Directory Structure:
 <ul>
   <li>mutation-identification-benchmark</li>
   <ul>
-    <li>text</li>
+    <li>correct_specs</li>
+    <ul>
+      <li>2pc_correct.txt</li>
+      <li>paxos_correct.txt</li>
+      <li>raft_correct.txt</li>
+    </ul>
+    <li>mutations</li>
+    <ul>
+      <li>2pc</li>
+      <li>paxos</li>
+      <li>raft</li>
+    </ul>
   </ul>
   <li>protocol-identification-benchmark</li>
   <ul>
@@ -68,8 +80,31 @@ Note: all correct TLA+ specs used in this project are sourced from [https://gith
   </ul>
 </ul>
 
+The interesting files are in mutation-identification-benchmark/mutations/{protocol}.
+For a given protocol, the directory contains:
+<ul>
+  <li>gpt3.5</li>
+  <li>gpt4</li>
+  <li>llama2</li>
+  <li>palm</li>
+  <li>main.py</li>
+  <li>{protocol}_mod_explanations.txt</li>
+  <li>results_summary_{protocol}.txt</li>
+  <li>{protocol}_mod_{i}.txt (for i in [1:10])</li>
+</ul>
 
-<!-- GETTING STARTED -->
-## Getting Started
+In each model directory (gpt3.5, gpt4, llama2, palm), you will find model responses to all 10 mutations run 4 times each.
+
+In main.py, you will find the script we wrote to automatically run the benchmark on all models. More information on how to use this can be found in the [Usage](#usage) section below.
+
+In {protocol}_mod_explanations.txt, you will find a natural language explanation of the bugs introduced in each mutation, and the lines of code affected.
+
+In results_summary_{protocol}.txt, you will find the accuracy of each model on each run of each mutation of each protocol.
+
+In {protocol}_mod_{i}.txt (for i in [1:10]), you will find the actual buggy TLA+ spec that we input to each model.
+
+
+<!-- USAGE -->
+## Usage
 
 text
