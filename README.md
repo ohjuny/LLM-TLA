@@ -127,9 +127,9 @@ pip install google-generativeai
 
 You must obtain an API key for the model you run.
 <ol>
-  <li><b>GPT</b>: [https://openai.com/blog/openai-api](https://openai.com/blog/openai-api)</li>
-  <li><b>Llama-2</b>: [https://replicate.com/blog/run-llama-2-with-an-api](https://replicate.com/blog/run-llama-2-with-an-api)</li>
-  <li><b>PaLM</b>: [https://developers.generativeai.google/tutorials/setup](https://developers.generativeai.google/tutorials/setup)</li>
+  <li><b>GPT</b>: https://openai.com/blog/openai-api</li>
+  <li><b>Llama-2</b>: https://replicate.com/blog/run-llama-2-with-an-api</li>
+  <li><b>PaLM</b>: https://developers.generativeai.google/tutorials/setup</li>
 </ol>
 
 For GPT and PaLM, simply paste in the API key in line 41/42.
