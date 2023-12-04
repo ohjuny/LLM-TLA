@@ -38,7 +38,7 @@ TLA+ is a formal specification language used in system engineering to design and
     <li>
         <b>Protocol-Identification Benchmark</b>
         <br>
-        Given a TLA+ spec, can an LLM identify the protcol being implemented?
+        Given a TLA+ spec, can an LLM identify the protocol being implemented?
     </li>
     <li>
         <b>Bug-Identification Benchmark</b>
