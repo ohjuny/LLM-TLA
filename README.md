@@ -20,14 +20,14 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<!-- <details>
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#directory-structure">Directory Structure</a></li>
     <li><a href="#usage">Usage</a></li>
   </ol>
-</details> -->
+</details>
 
 
 <!-- ABOUT THE PROJECT -->
@@ -50,6 +50,8 @@ TLA+ is a formal specification language used in system engineering to design and
         </ol>
     </li>
 </ol>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- Directory Structure -->
@@ -103,6 +105,8 @@ In `results_summary_{protocol}.txt`, you will find the accuracy of each model on
 
 In `{protocol}_mod_{i}.txt` (for i in [1:10]), you will find the actual buggy TLA+ spec that we input to each model.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- USAGE -->
 ## Usage
@@ -136,3 +140,5 @@ export REPLICATE_API_TOKEN={api_key}
 ```
 
 By default, `main.py` runs your model of choice once on each of the 10 mutations with a static prompt. You may customize the control flow and the prompt as you wish by modifying the script.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
